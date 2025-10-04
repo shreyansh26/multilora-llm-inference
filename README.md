@@ -22,7 +22,7 @@ This repository contains several implementations and test/benchmark scripts for 
   - Torch reference: `sgmv_triton/sgmv_torch_sequential.py`
   - Test files: `sgmv_triton/run_sgmv_shrink.py` and `sgmv_triton/run_sgmv_expand.py` for validation and benchmarking.
 
-### Microbenchmarks (decode vs prefill)
+### Microbenchmarks (decode and prefill)
 - `multilora_impl_prefill.py` (prefill path: sequence length n > 1)
   - Same suite as above but for prefill; includes an extra token dimension in the kernels.
   - Produces plot: `plots/prefill_lora_loop_vs_cheat_bmm_vs_gbmm_vs_bgmv_cuda_triton_vs_sgmv_triton.png`.
@@ -57,7 +57,7 @@ CUDA_VISIBLE_DEVICES=0 python benchmark_inference_multilora.py \
 
 ### Benchmark results
 
-Configuration excerpt:
+Configuration:
 
 ```text
 Number of LoRA adapters: 7
