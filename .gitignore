@@ -1,0 +1,6 @@
+*.so
+**/cccl
+build/
+__pycache__/
+wandb/
+results.txt
