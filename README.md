@@ -85,3 +85,11 @@ sgmv_triton  1.10x
 bgmv_cuda    1.02x
 bgmv_triton  1.00x
 ```
+
+---
+
+### References
+
+* [Punica](https://arxiv.org/abs/2310.18547)
+* [vLLM](https://github.com/vllm-project/vllm)
+* [Blog by Lequn Chen (first author of Punica)](https://le.qun.ch/en/blog/2023/09/11/multi-lora-potentials/)
